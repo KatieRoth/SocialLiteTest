@@ -1,6 +1,5 @@
 package com.example.katie.sociallitetest;
 
-import java.util.Locale;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
@@ -17,6 +16,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -89,8 +90,17 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            switch(position){
+                case 0: return PlaceholderFragment.newInstance(position + 1);
+                case 1 : return  MyFragment.newInstance();
+                case 2: return MyFragment2.newInstance();
+                // default: return MyFragment.newInstance();
+/* It is better to use default so that it always returns a fragment and no problems would ever occur */
+            }
+            return null; //if you use default, you would not need to return null
         }
+
+
 
         @Override
         public int getCount() {
