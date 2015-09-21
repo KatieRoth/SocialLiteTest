@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Calendar_Activity"
+            android:label="@string/title_activity_calendar_"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.katie.sociallitetest.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
