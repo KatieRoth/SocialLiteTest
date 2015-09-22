@@ -67,9 +67,7 @@ public class MyFragment extends Fragment {
         ClickMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(tv.getText().toString().contains("Hello")){
-                    tv.setText("Hi");
-                }else tv.setText("Hello");
+                sendToCalendar();
 
             }
         });
