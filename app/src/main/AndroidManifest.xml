@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.katie.sociallitetest.MainActivity" />
         </activity>
+        <activity
+            android:name=".HaikuDescription"
+            android:label="@string/title_activity_haiku_description"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.katie.sociallitetest.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

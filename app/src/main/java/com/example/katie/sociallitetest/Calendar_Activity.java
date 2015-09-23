@@ -16,18 +16,31 @@ public class Calendar_Activity extends ListActivity {
     private TextView text;
     private List<String>listValues;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_);
 
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        //Boolean haikuEvent = bundle.getBoolean("haiku");
+
         text = (TextView) findViewById(R.id.mainText);
         listValues = new ArrayList<String>();
-        listValues.add("Haiku Deathmatch        Fri. 10 pm");
+        if(!bundle.isEmpty()) {
+            Boolean haikuEvent = bundle.getBoolean("haiku");
+
+
+            if (haikuEvent == true) {
+                listValues.add("Haiku Deathmatch        Fri. 10 pm");
+            }
+        }
         listValues.add("Team Trivia             Sat. 8 pm");
         listValues.add("French Cooking          Mon. 7 am");
         listValues.add("Salsa Dancing           Tues. 6 pm");
         listValues.add("Adult Acting            Thurs. 9 pm");
+
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter <String>(this, R.layout.row_layout,R.id.listText, listValues);
         setListAdapter(myAdapter);

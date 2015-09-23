@@ -67,7 +67,8 @@ public class MyFragment extends Fragment {
         ClickMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendToCalendar();
+                Intent intent = new Intent(getActivity(), HaikuDescription.class);
+                startActivity(intent);
 
             }
         });
