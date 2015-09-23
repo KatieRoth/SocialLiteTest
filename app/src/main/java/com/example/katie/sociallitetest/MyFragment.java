@@ -83,10 +83,24 @@ public class MyFragment extends Fragment {
             }
         });
 
+        ClickMe = (Button) rootView.findViewById(R.id.settings);
+        tv = (TextView) rootView.findViewById(R.id.textView2);
+        ClickMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendToSettings();
+
+            }
+        });
+
         return rootView;
     }
     private void sendToCalendar() {
         Intent intent = new Intent(getActivity(), Calendar_Activity.class);
+        startActivity(intent);
+    }
+    private void sendToSettings() {
+        Intent intent = new Intent(getActivity(), PrefereceActivity.class);
         startActivity(intent);
     }
 
