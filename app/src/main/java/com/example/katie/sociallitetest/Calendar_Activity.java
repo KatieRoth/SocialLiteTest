@@ -15,6 +15,7 @@ import java.util.List;
 public class Calendar_Activity extends ListActivity {
     private TextView text;
     private List<String>listValues;
+    private Boolean haikuBool = false;
 
 
     @Override
@@ -33,8 +34,12 @@ public class Calendar_Activity extends ListActivity {
 
 
             if (haikuEvent == true) {
-                listValues.add("Haiku Deathmatch        Fri. 10 pm");
+                haikuBool = true; 
+
             }
+        }
+        if (haikuBool == true) {
+            listValues.add("Haiku Deathmatch        Fri. 10 pm");
         }
         listValues.add("Team Trivia             Sat. 8 pm");
         listValues.add("French Cooking          Mon. 7 am");
