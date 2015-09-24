@@ -39,7 +39,7 @@ public class HaikuDescription extends AppCompatActivity {
                 //startActivity(intent);
             }
         });
-
+        getSupportActionBar().hide();
 
     }
 

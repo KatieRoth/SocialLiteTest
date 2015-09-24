@@ -22,6 +22,7 @@ public class MyFragment extends Fragment {
 
     public static MyFragment newInstance() {
         MyFragment fragment = new MyFragment();
+
         return fragment;
     }
 

@@ -51,7 +51,7 @@ public class MainActivity extends  AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-
+        getSupportActionBar().hide();
     }
 
 
