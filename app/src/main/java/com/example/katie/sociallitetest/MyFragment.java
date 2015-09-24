@@ -51,8 +51,11 @@ public class MyFragment extends Fragment {
 
             }
         });
+        return rootView;
 
-        ClickMe = (Button) rootView.findViewById(R.id.Calendar);
+    }
+
+   /*     ClickMe = (Button) rootView.findViewById(R.id.Calendar);
         tv = (TextView) rootView.findViewById(R.id.textView2);
         ClickMe.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +77,7 @@ public class MyFragment extends Fragment {
 
         return rootView;
     }
-    private void sendToCalendar() {
+  /*  private void sendToCalendar() {
         Intent intent = new Intent(getActivity(), Calendar_Activity.class);
         Bundle bundle = new Bundle();
         intent.putExtras(bundle);
@@ -84,5 +87,6 @@ public class MyFragment extends Fragment {
         Intent intent = new Intent(getActivity(), PrefereceActivity.class);
         startActivity(intent);
     }
+    */
 
-} // This is the end of our MyFragments Class
+    }// This is the end of our MyFragments Class
