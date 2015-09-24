@@ -1,6 +1,8 @@
 package com.example.katie.sociallitetest;
 
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
@@ -17,6 +19,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -44,6 +47,11 @@ public class MainActivity extends  AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+        Button settingsButton = (Button) findViewById(R.id.settings);
+        Button calButton = (Button) findViewById(R.id.Calendar);
+        checkFirstRun();
+
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -52,6 +60,8 @@ public class MainActivity extends  AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
         getSupportActionBar().hide();
+
+
     }
 
 
@@ -158,5 +168,19 @@ public class MainActivity extends  AppCompatActivity {
             return rootView;
         }
     }
+
+    public void checkFirstRun() {
+        boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("isFirstRun", true);
+        if (isFirstRun){
+
+            new AlertDialog.Builder(this).setTitle("Interested in an Activity?").setMessage("Tap the Picture for More Information").setNeutralButton("OK", null).show();
+
+            getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                    .edit()
+                    .putBoolean("isFirstRun", false)
+                    .apply();
+        }
+    }
+
 
 }

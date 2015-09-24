@@ -35,31 +35,9 @@ public class MyFragment extends Fragment {
     TextView tv;
 
 
-   /* @Override
-    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        if (container == null) {
-            return null;
-        }
-        LinearLayout theLayout = (LinearLayout)inflater.inflate(R.layout.my_fragment, container, false);
-        Button edit = (Button) theLayout.findViewById(R.id.button);
-        edit.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                final LinearLayout theLayout = (LinearLayout)inflater.inflate(R.layout.my_fragment2, container, false);
-
-            }
-        });
-        return theLayout;
-
-    }
-
-*/
-
-
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
 
         View rootView = inflater.inflate(R.layout.my_fragment, container, false);
 

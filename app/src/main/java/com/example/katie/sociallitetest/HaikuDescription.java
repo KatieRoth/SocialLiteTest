@@ -28,9 +28,7 @@ public class HaikuDescription extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 Globals g = (Globals)getApplication();
                 g.setBool(true);
-                intent.putExtras(bundle);
-                startActivity(intent);
-
+                startActivity(new Intent(HaikuDescription.this, MainActivity.class));
             }
         });
 
@@ -40,9 +38,6 @@ public class HaikuDescription extends AppCompatActivity {
                 startActivity(new Intent(HaikuDescription.this, MainActivity.class));
                 Globals g = (Globals)getApplication();
                 g.setBool(false);
-                //Intent intent = new Intent(getBaseContext(), Calendar_Activity.class);
-                //intent.putExtra("EXTRA_SESSION_ID", sessionId);
-                //startActivity(intent);
             }
         });
         getSupportActionBar().hide();
