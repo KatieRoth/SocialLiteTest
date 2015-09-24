@@ -46,11 +46,30 @@ public class MainActivity extends  AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //THESE ARE BUTTONS THAT SAY ON THE SCREEN DURING SWIPING
+        //Button calButton = (Button) findViewById(R.id.Calendar);
+        //Button settingsButton = (Button) findViewById(R.id.settings);
 
-
-        Button settingsButton = (Button) findViewById(R.id.settings);
-        Button calButton = (Button) findViewById(R.id.Calendar);
         checkFirstRun();
+
+
+        //SUPPOSE TO SEND TO ACTIVITIES WHEN BUTTONS ARE PRESSED
+      /*  settingsButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PrefereceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+       calButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Calendar_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+*/
+
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.

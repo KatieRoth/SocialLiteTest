@@ -1,10 +1,13 @@
 package com.example.katie.sociallitetest;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 /**
@@ -32,10 +35,24 @@ public class PlaceholderFragment extends Fragment {
     public PlaceholderFragment() {
     }
 
+    private void sendToCalendar() {
+        Intent intent = new Intent(getActivity(), Calendar_Activity.class);
+        Bundle bundle = new Bundle();
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
+    private void sendToSettings() {
+        Intent intent = new Intent(getActivity(), PrefereceActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
         return rootView;
+
     }
 }
+
