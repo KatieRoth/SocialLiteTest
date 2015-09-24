@@ -14,4 +14,7 @@
     <string name="decline">decline</string>
     <string name="action_search">Search</string>
     <string name="title_activity_preferece">settings</string>
+    <string name="day">day</string>
+    <string name="price">price</string>
+    <string name="category">category</string>
 </resources>

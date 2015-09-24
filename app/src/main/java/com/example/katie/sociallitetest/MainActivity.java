@@ -21,7 +21,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends  AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -58,9 +58,9 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_actionbar_action, menu);
-        return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);;
+
+        return true;
     }
 
     @Override
@@ -70,18 +70,12 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        switch (item.getItemId()) {
-            case R.id.action_search:
-                //openSearch();
-                return true;
-            case R.id.action_settings:
-                // openSettings();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        //noinspectionSimplifiablIfStatement
+        if(id== R.id.action_settings){
+            return true;
         }
 
-
+        return super.onOptionsItemSelected(item);
     }
 
 
