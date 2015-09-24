@@ -34,6 +34,8 @@ public class HaikuDescription extends AppCompatActivity {
 
         declineButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
+                startActivity(new Intent(HaikuDescription.this, MainActivity.class));
                 //Intent intent = new Intent(getBaseContext(), Calendar_Activity.class);
                 //intent.putExtra("EXTRA_SESSION_ID", sessionId);
                 //startActivity(intent);
@@ -64,4 +66,5 @@ public class HaikuDescription extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
