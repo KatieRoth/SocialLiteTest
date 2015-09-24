@@ -15,7 +15,6 @@ import java.util.List;
 public class Calendar_Activity extends ListActivity {
     private TextView text;
     private List<String>listValues;
-    private Boolean haikuBool = false;
 
 
     @Override
@@ -25,6 +24,8 @@ public class Calendar_Activity extends ListActivity {
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
+        Globals g = (Globals)getApplication();
+        boolean haikuBool=g.getBool();
         //Boolean haikuEvent = bundle.getBoolean("haiku");
 
         text = (TextView) findViewById(R.id.mainText);
@@ -41,6 +42,7 @@ public class Calendar_Activity extends ListActivity {
         if (haikuBool == true) {
             listValues.add("Haiku Deathmatch        Fri. 10 pm");
         }
+
         listValues.add("Team Trivia             Sat. 8 pm");
         listValues.add("French Cooking          Mon. 7 am");
         listValues.add("Salsa Dancing           Tues. 6 pm");

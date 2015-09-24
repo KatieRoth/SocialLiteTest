@@ -21,11 +21,13 @@ public class HaikuDescription extends AppCompatActivity {
         Button declineButton = (Button) findViewById(R.id.decline);
 
 
+
         saveButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Calendar_Activity.class);
                 Bundle bundle = new Bundle();
-                bundle.putBoolean("haiku", true);
+                Globals g = (Globals)getApplication();
+                g.setBool(true);
                 intent.putExtras(bundle);
                 startActivity(intent);
 
@@ -36,6 +38,8 @@ public class HaikuDescription extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(HaikuDescription.this, MainActivity.class));
+                Globals g = (Globals)getApplication();
+                g.setBool(false);
                 //Intent intent = new Intent(getBaseContext(), Calendar_Activity.class);
                 //intent.putExtra("EXTRA_SESSION_ID", sessionId);
                 //startActivity(intent);
