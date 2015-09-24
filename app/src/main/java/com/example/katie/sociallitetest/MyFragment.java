@@ -98,6 +98,8 @@ public class MyFragment extends Fragment {
     }
     private void sendToCalendar() {
         Intent intent = new Intent(getActivity(), Calendar_Activity.class);
+        Bundle bundle = new Bundle();
+        intent.putExtras(bundle);
         startActivity(intent);
     }
     private void sendToSettings() {
