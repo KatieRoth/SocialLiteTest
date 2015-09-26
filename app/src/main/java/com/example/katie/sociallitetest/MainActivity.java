@@ -49,9 +49,22 @@ public class MainActivity extends  AppCompatActivity {
         //THESE ARE BUTTONS THAT SAY ON THE SCREEN DURING SWIPING
         Button calButton = (Button) findViewById(R.id.Calendar);
         Button settingsButton = (Button) findViewById(R.id.settings);
+        Button imageButton = (Button) findViewById(R.id.image);
+
+
+
+     //   View b = findViewById(R.id.button);
+     //   if( ){
+     //       b.setVisibility(View.GONE)
 
         checkFirstRun();
 
+       /* imageButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PrefereceActivity.class);
+                startActivity(intent);
+            }
+        }); */
 
         //SUPPOSE TO SEND TO ACTIVITIES WHEN BUTTONS ARE PRESSED
         settingsButton.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +82,42 @@ public class MainActivity extends  AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+      /*  mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+            @Override
+            public void onPageSelected(int index) {
+                if (index == 0) {
+                    imageButton.setVisibility(View.VISIBLE);
+                } else {
+                    imageButton.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onPageScrolled(int arg0, float arg1, int arg2) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int arg0) {
+
+            }
+        });
+
+        */
+
+
+
+      /*  imageButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    sendToDescription();
+
+                }
+            }
+        }); */
 
 
 
@@ -138,8 +187,8 @@ public class MainActivity extends  AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 2;
+            // Show 2 total pages.
+            return 3;
         }
 
         @Override
@@ -202,6 +251,7 @@ public class MainActivity extends  AppCompatActivity {
                     .apply();
         }
     }
+
 
 
 }

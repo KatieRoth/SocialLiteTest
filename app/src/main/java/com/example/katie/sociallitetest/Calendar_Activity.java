@@ -26,6 +26,8 @@ public class Calendar_Activity extends ListActivity {
         Bundle bundle = intent.getExtras();
         Globals g = (Globals)getApplication();
         boolean haikuBool=g.getBool();
+        boolean triviaBool = g.getTrivia();
+
         //Boolean haikuEvent = bundle.getBoolean("haiku");
 
         text = (TextView) findViewById(R.id.mainText);
@@ -38,12 +40,20 @@ public class Calendar_Activity extends ListActivity {
                 haikuBool = true; 
 
             }
+
+            Boolean triviaEvent = bundle.getBoolean("teamTrivia");
+
+            if (triviaEvent == true) {
+                triviaBool = true;
+
+            }
         }
         if (haikuBool == true) {
             listValues.add("Haiku Deathmatch        Fri. 10 pm");
         }
-
-        listValues.add("Team Trivia             Sat. 8 pm");
+        if (triviaBool == true) {
+            listValues.add("Team Trivia             Sat. 8 pm");
+        }
         listValues.add("French Cooking          Mon. 7 am");
         listValues.add("Salsa Dancing           Tues. 6 pm");
         listValues.add("Adult Acting            Thurs. 9 pm");

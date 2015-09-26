@@ -7,6 +7,7 @@ import android.app.Application;
  */
 public class Globals extends Application {
     private boolean haiku = false;
+    private boolean teamTrivia = false;
 
     public boolean getBool(){
         return this.haiku;
@@ -14,5 +15,13 @@ public class Globals extends Application {
 
     public void setBool(boolean b){
         this.haiku = b;
+    }
+
+    public boolean getTrivia(){
+        return this.teamTrivia;
+    }
+
+    public void setTrivia(boolean b){
+        this.teamTrivia = b;
     }
 }

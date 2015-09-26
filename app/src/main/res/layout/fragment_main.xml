@@ -7,4 +7,15 @@
     tools:context=".MainActivity"
     android:background="@drawable/outing">
 
+
+   <!--> <Button
+        android:layout_width="360dp"
+        android:layout_height="380dp"
+        android:text=" picture  "
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/image" /> <-->
+
+
+
 </LinearLayout>

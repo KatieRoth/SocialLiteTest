@@ -49,6 +49,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.katie.sociallitetest.Calendar_Activity" />
         </activity>
+        <activity
+            android:name=".TeamTriviaDescription"
+            android:label="@string/title_activity_team_trivia_description" >
+        </activity>
     </application>
 
 </manifest>
