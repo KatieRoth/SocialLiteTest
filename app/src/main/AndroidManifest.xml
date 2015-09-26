@@ -41,6 +41,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.katie.sociallitetest.MainActivity" />
         </activity>
+        <activity
+            android:name=".removeEvent_Activity"
+            android:label="@string/title_activity_remove_event_"
+            android:parentActivityName=".Calendar_Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.katie.sociallitetest.Calendar_Activity" />
+        </activity>
     </application>
 
 </manifest>

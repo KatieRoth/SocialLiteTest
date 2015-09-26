@@ -12,10 +12,12 @@
     <string name="title_activity_haiku_description">HaikuDescription</string>
     <string name="save">save</string>
     <string name="decline">decline</string>
+    <string name="remove">remove</string>
     <string name="action_search">Search</string>
     <string name="title_activity_preferece">settings</string>
     <string name="day">day</string>
     <string name="price">price</string>
     <string name="category">category</string>
     <string name="button_height">100dp</string>
+    <string name="title_activity_remove_event_">removeEvent_Activity</string>
 </resources>
