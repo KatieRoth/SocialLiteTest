@@ -10,7 +10,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_calendar_">Calendar_Activity</string>
     <string name="title_activity_haiku_description">HaikuDescription</string>
-    <string name="save">save</string>
+    <string name="save"> save </string>
     <string name="decline">decline</string>
     <string name="remove">remove</string>
     <string name="action_search">Search</string>
