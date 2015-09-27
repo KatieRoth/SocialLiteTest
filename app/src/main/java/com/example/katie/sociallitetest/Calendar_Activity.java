@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -62,6 +64,19 @@ public class Calendar_Activity extends ListActivity {
         ArrayAdapter<String> myAdapter = new ArrayAdapter <String>(this, R.layout.row_layout,R.id.listText, listValues);
         setListAdapter(myAdapter);
 
+    }
+
+    protected void onListItemClick(ListView l, View v, int position, long id)
+    {
+        super.onListItemClick(l,v,position,id);
+        if (l.getItemAtPosition(position).toString()== "Haiku Deathmatch        Fri. 10 pm") {
+            Intent intent = new Intent(this, removeEvent_Activity.class);
+            startActivity(intent);
+        }
+        if (l.getItemAtPosition(position).toString()== "Team Trivia             Sat. 8 pm") {
+            Intent intent = new Intent(this, Remove_TriviaActivity.class);
+            startActivity(intent);
+        }
     }
 
     @Override

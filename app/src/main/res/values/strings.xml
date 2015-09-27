@@ -21,4 +21,5 @@
     <string name="button_height">100dp</string>
     <string name="title_activity_remove_event_">removeEvent_Activity</string>
     <string name="title_activity_team_trivia_description">TeamTriviaDescription</string>
+    <string name="title_activity_remove__trivia">Remove_TriviaActivity</string>
 </resources>

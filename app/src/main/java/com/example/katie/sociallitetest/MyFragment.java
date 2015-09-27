@@ -42,7 +42,7 @@ public class MyFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.my_fragment, container, false);
 
         ClickMe = (Button) rootView.findViewById(R.id.button);
-       
+
         ClickMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

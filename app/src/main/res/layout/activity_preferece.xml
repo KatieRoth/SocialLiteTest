@@ -13,9 +13,10 @@
         android:text="Music"
         android:id="@+id/checkBox8"
         android:checked="false"
-        android:layout_above="@+id/checkBox10"
-        android:layout_alignLeft="@+id/checkBox9"
-        android:layout_alignStart="@+id/checkBox9" />
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="290dp"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -23,11 +24,9 @@
         android:text="Drama"
         android:id="@+id/checkBox9"
         android:checked="false"
-        android:layout_alignTop="@+id/checkBox11"
-        android:layout_toRightOf="@+id/checkBox11"
-        android:layout_toEndOf="@+id/checkBox11"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp" />
+        android:layout_marginLeft="100dp"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -35,7 +34,10 @@
         android:text="Dance"
         android:id="@+id/checkBox10"
         android:checked="false"
-        android:layout_below="@+id/checkBox12" />
+        android:layout_below="@+id/checkBox12"
+        android:layout_marginLeft="100dp"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -43,8 +45,14 @@
         android:text="Cooking"
         android:id="@+id/checkBox11"
         android:checked="false"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="133dp" />
+        android:layout_below="@+id/seekBar"
+        android:layout_toRightOf="@+id/checkBox10"
+        android:layout_toEndOf="@+id/checkBox10"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="61dp"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -55,7 +63,9 @@
         android:layout_marginTop="35dp"
         android:layout_alignTop="@+id/checkBox11"
         android:layout_alignLeft="@+id/checkBox11"
-        android:layout_alignStart="@+id/checkBox11" />
+        android:layout_alignStart="@+id/checkBox11"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
 
     <SeekBar
         android:layout_width="wrap_content"
@@ -74,17 +84,21 @@
         android:layout_height="wrap_content"
         android:text="Mon."
         android:id="@+id/checkBox"
-        android:checked="false" />
+        android:checked="false"
+        android:layout_marginLeft="100dp"
+        android:scaleY="1.5"
+        android:scaleX="1.5"
+        android:layout_alignParentTop="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tues."
         android:id="@+id/checkBox2"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox"
-        android:checked="false" />
+        android:layout_marginLeft="100dp"
+        android:checked="false"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -92,9 +106,9 @@
         android:text="Wed."
         android:id="@+id/checkBox3"
         android:checked="false"
-        android:layout_below="@+id/checkBox2"
-        android:layout_alignRight="@+id/checkBox"
-        android:layout_alignEnd="@+id/checkBox" />
+        android:layout_marginLeft="100dp"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -102,9 +116,10 @@
         android:text="Thurs."
         android:id="@+id/checkBox4"
         android:checked="false"
-        android:layout_below="@+id/checkBox3"
-        android:layout_alignLeft="@+id/seekBar"
-        android:layout_alignStart="@+id/seekBar" />
+        android:scaleY="1.5"
+        android:scaleX="1.5"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="200dp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -112,9 +127,10 @@
         android:text="Fri."
         android:id="@+id/checkBox5"
         android:checked="false"
-        android:layout_above="@+id/checkBox2"
-        android:layout_alignLeft="@+id/checkBox6"
-        android:layout_alignStart="@+id/checkBox6" />
+        android:scaleY="1.5"
+        android:scaleX="1.5"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="200dp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -122,9 +138,10 @@
         android:text="Sat."
         android:id="@+id/checkBox6"
         android:checked="false"
-        android:layout_above="@+id/checkBox3"
-        android:layout_alignLeft="@+id/checkBox7"
-        android:layout_alignStart="@+id/checkBox7" />
+        android:scaleY="1.5"
+        android:scaleX="1.5"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="200dp"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -132,8 +149,9 @@
         android:text="Sun."
         android:id="@+id/checkBox7"
         android:checked="false"
-        android:layout_alignTop="@+id/checkBox3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:scaleY="1.5"
+        android:scaleX="1.5"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="200dp" />
 
 </RelativeLayout>

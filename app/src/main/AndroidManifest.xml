@@ -53,6 +53,14 @@
             android:name=".TeamTriviaDescription"
             android:label="@string/title_activity_team_trivia_description" >
         </activity>
+        <activity
+            android:name=".Remove_TriviaActivity"
+            android:label="@string/title_activity_remove__trivia"
+            android:parentActivityName=".Calendar_Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.katie.sociallitetest.Calendar_Activity" />
+        </activity>
     </application>
 
 </manifest>
