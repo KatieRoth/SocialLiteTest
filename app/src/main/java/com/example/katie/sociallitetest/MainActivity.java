@@ -243,7 +243,7 @@ public class MainActivity extends  AppCompatActivity {
         boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("isFirstRun", true);
         if (isFirstRun){
 
-            new AlertDialog.Builder(this).setTitle("Interested in an Activity?").setMessage("Tap the Picture for More Information").setNeutralButton("OK", null).show();
+            new AlertDialog.Builder(this).setTitle("Interested in an Activity?").setMessage("Swipe and Tap the Picture for More Information").setNeutralButton("OK", null).show();
 
             getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                     .edit()
